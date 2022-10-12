@@ -1,0 +1,107 @@
+section {width: 100%; position: relative;}
+button {border: none; cursor: pointer; background: transparent;}
+i {font-weight: normal;}
+.up {animation-duration: 1s; animation-fill-mode: forwards; transform: translateY(50%); opacity: 0;}
+@keyframes up {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+header {position: fixed; top: 0; left: 0; z-index: 100; width: 100%; height: 50px; padding: 5px 0; background: #000;}
+header h1 a {width: 236px; height: 50px; display: block; margin: 0 auto; background: url(../img/musinsa-hyundaicard_logo.png) no-repeat 50% 50%; font-size: 0;}
+
+.video-container #video {position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; height: 100%; z-index: -2;}
+.video-dim {position: fixed; top: 0; left: 0; z-index: -1; width: 100%; height: 100%; background-color: #000; opacity: 0.3;}
+
+.content_container {width: 1130px; height: auto; margin: 0 auto; position: relative;}
+
+.content_1 {height: 100vh;}
+.content_1 .content_container {position: fixed; width: 1080px; height: 610px; top: 40%; left: 50%; transform: translate(-50%, -50%); transition: all ease-in-out 0.3s;}
+.content_1 .content_container .title {position: absolute; top: 50%; left: 0; transform: translateY(-50%); color: #fff;}
+.content_1 .content_container .title h4 {font-size: 36px; margin-bottom: 10px;}
+.content_1 .content_container .title h2 {font-size: 86px; font-weight: bold;}
+.content_1 .content_container .point_list {position: absolute; width: 244px; top: 50%; right: 0; transform: translateY(-50%); color: #fff;}
+.content_1 .content_container .point_list .point {margin-bottom: 60px; margin-right: 10px; float: left;}
+.content_1 .content_container .point_list .point .circle { position: relative; display: inline-block; width: 90px; height: 90px; background-color: #fff; border-radius: 50%; vertical-align: middle;}
+.content_1 .content_container .point_list .point .circle p {position: absolute; top: 50%; left: 50%; width: 100%; transform: translate(-50%, -50%); font-size: 16px; color: #000; margin-left: 20px;}
+.content_1 .content_container .point_list .point .circle p span {display: inline-block; margin-top: 10px;}
+.content_1 .content_container .point_list .point:nth-child(1) .circle p span {margin-top: 25px;}
+.content_1 .content_container .point_list .point .circle p .number {font-size: 46px; font-weight: 400; margin-top: 0 !important;}
+.content_1 .content_container .point_list .point h6 {margin-left: 10px; display: inline-block; vertical-align: middle;}
+
+.content_2 {padding-top: 160px;}
+.content_2 .title,
+.content_3 .title {width: 100%; display: inline-block; margin: 0 auto; text-align: center; margin-bottom: 40px;}
+.content_2 .title h4,
+.content_3 .title h4 {font-size: 28px; font-weight: 400; display: block; margin-bottom: 10px; color: #fff;}
+.content_2 .title h2,
+.content_3 .title h2 {font-size: 46px; color: #fff;}
+.content_2 ul {text-align: center;}
+.content_2 ul li {display: inline-block; width: 200px; margin-right: 20px; margin-bottom: 50px;}
+.content_2 ul li img {width: 100%;}
+.content_2 ul li span {position: relative; display: block; margin: 0 auto; margin-top: 20px; text-align: center; font-size: 18px; color: #ccc;}
+.content_2 ul li:first-child span::after {content: 'NEW'; display: inline-block; position: absolute; width: 50px; line-height: 26px; right: 0%; top: -100%; border-radius: 20px 20px 20px 0; font-size: 13px; background: #ff0000; color: #fff; text-align: center;}
+
+.content_3 {padding-bottom: 140px; padding-top: 160px;}
+
+.content_4 {padding-bottom: 240px;}
+.content_4 .content_container {width: 1118px;}
+.content_4 img {display: block; width: 400px; margin: 0 auto;}
+.content_4 .text {position: absolute; top: 50%; left: 50%; width: 100%; transform: translate(-50%, -50%); color: #fff; font-size: 0;}
+.content_4 .text i {text-align: left; font-size: 96px; display: inline-block; width: 50%;}
+.content_4 .text p {text-align: right; font-size: 96px; display: inline-block; width: 50%;}
+.content_4 .notice {width: 900px; margin: 0 auto; margin-top: 60px;}
+.content_4 .notice ul li {font-size: 16px; line-height: 22px; color: #aaa;}
+
+.content_5 {padding-bottom: 240px;}
+.content_5 .content_container {width: 1280px;}
+.content_5 .text {margin: 0 auto; margin-bottom: 50px; text-align: center; color: #fff; font-size: 96px;}
+.content_5 .card_list ul {display: inline-block; width: 100%; font-size: 0;}
+.content_5 .card_list ul li {display: inline-block; width: 33.3333%;}
+.content_5 .card_list ul li img {width: 400px;}
+.content_5 .card_list ul li:nth-child(2) {text-align: center; margin-top: 160px;}
+.content_5 .card_list ul li:nth-child(3) {text-align: right;}
+.content_5 .notice {width: 540px; margin: 0 auto; margin-top: 60px;}
+.content_5 .notice ul li {font-size: 16px; line-height: 22px; color: #aaa;}
+
+.content_6 {padding-bottom: 250px;}
+.content_6 .text {margin: 0 auto; margin-bottom: 88px; text-align: center; color: #fff; font-size: 96px;}
+.content_6 .card_list ul {display: block; margin: 0 auto; width: 840px; font-size: 0;}
+.content_6 .card_list ul li {display: inline-block; width: 50%;}
+.content_6 .card_list ul li img {width: 400px;}
+.content_6 .card_list ul li:nth-child(1) {text-align: left;}
+.content_6 .card_list ul li:nth-child(2) {text-align: right; margin-top: 160px;}
+.content_6 .detail_button {width: 270px; margin: 0 auto; margin-top: 38px; height: 80px; border-radius: 49px; background: #fff; transition: all ease-in-out 0.3s;}
+.content_6 .detail_button:hover {background: #0078FF;}
+.content_6 .detail_button a {display: inline-block; width: 100%; font-weight: bold; font-size: 18; line-height: 80px; text-align: center; color: #000;}
+.content_6 .detail_button:hover a {color: #fff;}
+
+.notice-wrap {width: 100%; background: #F5F5F5;}
+.content_7 {padding-top: 160px; padding-bottom: 216px;}
+.content_7 .content_container {width: 647px; margin: 0 auto;}
+.content_7 .content_container ul {margin-bottom: 40px;}
+.content_7 .content_container ul li {margin-bottom: 10px; font-size: 16px; color: #aaa;}
+.content_7 .content_container ul:not(.small) li:first-child {margin-bottom: 20px; font-size: 16px; color: #0078FF !important; font-weight: bold;}
+.content_7 .content_container ul li b {color: #000; margin-top: 20px; margin-bottom: 10px; font-weight: 400;}
+.content_7 .content_container .big {margin-top: 40px;}
+.content_7 .content_container .big li {font-size: 32px; line-height: 56px; font-weight: bold; color: #777; margin-bottom: 10px;}
+.content_7 .content_container .big li b {font-weight: bold;}
+.content_7 .content_container .small {margin-top: 60px;}
+
+.share {position: fixed; bottom: 100px; left: 60px; width: 80px; height: 80px;}
+.top {position: fixed; bottom: 100px; right: 60px; width: 80px; height: 80px;}
+.login {position: fixed; bottom: 200px; right: 60px; width: 80px; height: 80px; border-radius: 50%; background: #0078FF; line-height: 80px; text-align: center; color: #fff; font-weight: bold;}
+.share img,
+.top img {width: 100%;}
+
+.bottom-button-container {position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); width: 1280px; height: 80px; font-size: 0;}
+.bottom-button-container div {display: inline-block; width: 50%; height: 100%;}
+.bottom-button-container div a {display: inline-block; width: 100%; height: 100%;}
+.bottom-button-container .home button {font-size: 26px; font-weight: 400; width: 100%; height: 100%; background: #000; color: #fff;  text-align: center;}
+.bottom-button-container .detail button {font-size: 26px; font-weight: 400; width: 100%; height: 100%; background: #0078FF; color: #fff; text-align: center;}
